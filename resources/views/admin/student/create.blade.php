@@ -26,6 +26,10 @@
       <label>NISN</label>
       <input type="text" name="nisn" class="form-control" required>
     </div>
+    <div class="mb-3">
+    <label for="jurusan" class="form-label">Jurusan</label>
+    <input type="text" name="jurusan" class="form-control" id="jurusan" value="{{ old('jurusan', $student->jurusan ?? '') }}">
+    </div>
     <button type="submit" class="btn btn-success">Simpan</button>
   </form>
 </div>
