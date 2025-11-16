@@ -31,6 +31,11 @@
       <input type="text" name="nisn" value="{{ $student->nisn }}" class="form-control" required>
     </div>
 
+    <div class="mb-3">
+    <label for="jurusan" class="form-label">Jurusan</label>
+    <input type="text" name="jurusan" class="form-control" id="jurusan" value="{{ old('jurusan', $student->jurusan ?? '') }}">
+</div>
+
     <button type="submit" class="btn btn-primary">Update</button>
     <a href="{{ route('admin.students.index') }}" class="btn btn-secondary">Kembali</a>
   </form>

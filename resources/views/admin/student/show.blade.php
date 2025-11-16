@@ -29,6 +29,10 @@
           <th>NISN</th>
           <td>{{ $student->nisn }}</td>
         </tr>
+        <tr>
+          <th>Jurusan</th>
+          <td>{{ $student->jurusan}}</td>
+        </tr>
       </table>
 
       <a href="{{ route('admin.students.index') }}" class="btn btn-secondary">Kembali</a>

@@ -20,6 +20,7 @@
         <th>Nama Lengkap</th>
         <th>Jenis Kelamin</th>
         <th>NISN</th>
+        <th>Jurusan</th>
         <th>Aksi</th>
       </tr>
     </thead>
@@ -30,6 +31,7 @@
         <td>{{ $student->nis }}</td>
         <td>{{ $student->nama_lengkap }}</td>
         <td>{{ $student->jenis_kelamin }}</td>
+        <td>{{ $student->jurusan}}</td>
         <td>{{ $student->nisn }}</td>
         <td>
           <a href="{{ route('admin.students.show', $student->id) }}" class="btn btn-info btn-sm">Lihat</a>

@@ -35,6 +35,7 @@ class StudentController extends Controller
             'nama_lengkap' => 'required',
             'jenis_kelamin' => 'required',
             'nisn' => 'required|unique:students',
+            'jurusan' => 'required',
         ]);
 
         Student::create($request->all());
@@ -63,10 +64,11 @@ class StudentController extends Controller
     public function update(Request $request, Student $student)
     {
         $validated = $request->validate([
-            'nis' => 'required,',
+            'nis' => 'required',
             'nama_lengkap' => 'required',
             'jenis_kelamin' => 'required',
             'nisn' => 'required',
+            'jurusan' => 'required',
         ]);
         $student->update($validated);
         return redirect()->route('admin.students.index')->with('success', 'Data siswa berhasil diperbarui.');
