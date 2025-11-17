@@ -31,6 +31,7 @@
         <td>{{ $student->nis }}</td>
         <td>{{ $student->nama_lengkap }}</td>
         <td>{{ $student->jenis_kelamin }}</td>
+        <td>{{ $student->jurusan}}</td>
         <td>{{ $student->nisn }}</td>
         <td>{{ $student->jurusan}}</td>
         <td>
